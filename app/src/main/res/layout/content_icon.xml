@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pe.edu.upc.tareamapa.IconActivity"
+    tools:showIn="@layout/activity_icon">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/clienteCardView"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/gallese"
+                android:id="@+id/pictureImageView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_gallese"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:id="@+id/nombreTextView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/posicion_pedro"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:id="@+id/posicionTextView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/juega_gallese"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:id="@+id/juegaTextView" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio_gallese"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/biografiaTextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lat_gallese"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/latTextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/long_gallese"
+                    android:visibility="invisible"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/longTextView" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Mostrar mapa"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnMostrarMapa" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
